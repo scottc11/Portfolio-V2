@@ -1,0 +1,514 @@
+/*
+COLORS
+#3e3e41
+#12f69c
+#41f966
+#92f52f
+#6BA833
+Electric Blue - (135, 205, 255)
+*/
+
+body {
+  /*background-image: url("../img/background_image_alt.jpg");*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Source Code Pro', monaco, monospace;
+  height:100vh;  /*make body height of browser*/
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: 'Source Code Pro', monaco, monospace;*/
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+}
+
+a:hover {
+    color: rgb(135, 205, 255);
+}
+
+pre {
+  font-family: monospace;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/***** GLOBAL CLASSES *****/
+/**************************/
+
+
+
+.centering-div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.horizontal-center {
+  text-align: center;
+}
+
+.margin-spacer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.color-accent-yellow {color: #92f52f;}
+.color-accent-green {color: #41f966;}
+.color-accent-peach {color: #12f69c;}
+.color-accent-electric-blue {color: #87cdff;}
+.color-accent-orange {color: #6BA833;}
+.color-accent-grey {color: #3e3e41;}
+.color-accent-white {color: white;}
+.color-accent-black {color: black;}
+
+.bg-color-black {background-color: black;}
+.bg-color-main {background-color: rgb(82, 110, 58);}
+.bg-color-dark-grey {background-color: #3e3e41;}
+
+/*---------------------------*/
+/*        LOADING STUFF      */
+/*---------------------------*/
+
+#body {
+
+}
+
+#page {
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#modal {
+	position: fixed;
+  display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,1);
+	z-index: 99998;
+	-webkit-transition: opacity 1s ease-in;
+	-moz-transition: opacity 1s ease-in;
+	transition: opacity 0.5s ease-in;
+	pointer-events: none;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+
+/*---------------------------*/
+/* NAV? Is this even being used?      */
+/*---------------------------*/
+
+.nav-container {
+  height: 80px;
+  text-align: right;
+}
+
+.nav {
+  display: inline-block;
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: 'Source Code Pro';
+  margin: 0 20px 0 20px;
+  line-height: 100%;
+}
+
+.nav li a {
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: black;
+  background-color: none;
+  text-decoration: underline;
+}
+
+
+
+
+/*---------------------------*/
+/*        HEADER             */
+/*---------------------------*/
+
+.header {
+  margin-top: 20px;
+}
+
+.logo-container {
+  text-align: center;
+
+}
+
+.name-container {
+  text-align: center;
+  height: 80px;
+}
+
+#logo-mark {
+  width: 75%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#scampbell {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header-container {
+  text-align: center;
+}
+
+#heading {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+
+
+
+
+/*---------------------------*/
+/*        P5 SKETCH          */
+/*---------------------------*/
+
+.sketch-container {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#homeSketchContainer {
+  position: relative;
+  opacity: 0.7;
+  box-sizing: content-box;
+  border: 2px dashed black;
+
+  width: 400px;
+  height: 400px;
+
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  border-radius: 50%;
+  border: 20px solid rgba(0,0,0, 0.2);
+  box-shadow: 0 0 150px black;
+}
+
+#defaultCanvas0 {
+  border-radius: 50%;
+  box-shadow: 0 0 140px rgba(47, 52, 59, 1);
+  -moz-box-shadow: 0 0 140px rgba(47, 52, 59, 1);
+  -webkit-box-shadow: 0 0 140px rgba(47, 52, 59, 1);
+}
+
+
+
+
+
+/*---------------------------*/
+/*       NAVBAR              */
+/*---------------------------*/
+
+.navigation {
+  text-align: center;
+}
+
+.nav a {
+  color: #92F52F;
+}
+
+
+
+/*---------------------------*/
+/*   Social Media Icons      */
+/*---------------------------*/
+
+.icons-row {
+  margin-top: 20px;
+}
+
+.icons-container {
+  text-align: center;
+}
+
+.icon-container {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  transition: all;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+#github {}
+#linkedIn {}
+#twitter {}
+#email {}
+
+
+#youtube .icon {
+  width: 100px;
+}
+
+/*---------------------------*/
+/*         BUTTONS           */
+/*---------------------------*/
+
+.projects-open-button {
+  position: fixed;
+  display: block;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  margin-left: 8px;
+  top: 40%;
+  left: 0px;
+  text-shadow: 3px 0 10px rgba(0,0,0,0.8);
+}
+
+.projects-open-button ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.projects-open-button ul span {
+  color: #92f52f;
+  line-height: 200%;
+}
+
+.projects-open-button:hover {
+  color: #92f52f;
+  transform: scale(1.1);
+}
+
+/*****************************/
+
+.about-open-button {
+  position: fixed;
+  display: block;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  margin-right: 8px;
+  top: 40%;
+  right: 0px;
+  text-shadow: -3px 0 10px rgba(0,0,0,0.8);
+}
+
+.about-open-button:hover {
+  color: #92f52f;
+  transform: scale(1.1);
+}
+
+.about-open-button ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.about-open-button ul li {
+  margin: 3px 0 3px 0;
+}
+
+/* selecting the last three list items in ul */
+.about-open-button ul li:nth-child(6){
+  color: #92f52f;
+  line-height: 200%;
+}
+
+
+/*****************************/
+/******** PROJECTS ************/
+
+.projects-modal {
+  /*background-color: rgba(37, 37, 37, 0.9);*/
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+
+
+.header-shell {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.projects-header {
+  color: white;
+  font-size: 2em;
+  text-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+
+.projects-container {
+  text-align: center;
+}
+
+
+
+.project-preview-container {
+  box-sizing: border-box;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pro-pre-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;  /*so the background stays behind headers*/
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.pre-heading-container {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
+  z-index: 2;
+}
+
+.project-title {
+  color: #92f52f;
+}
+
+.project-date {
+  color: white;
+}
+
+.tinted {
+  background-color: rgba(0, 0, 0, 0.83);
+}
+
+#listplz-preview-bg {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url("../img/projects/listplz/my-wishlist-editing.png");
+}
+
+#manifesto-preview-bg {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("../img/projects/manifesto-preview.png");
+}
+
+#fmtc-preview-bg {
+  background-image: url("../img/projects/kss-may-25th-first-show_1.jpg");
+}
+
+#esplanade-preview-bg {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("../img/projects/esplanade/esplanade-preview.png");
+}
+
+#project-2-bg {
+  background-image: url("../img/gifs/essy_drive_like_frequency_band_particles.gif");
+}
+
+#project-3-bg {
+  background-image: url("../img/projects/foxface_preview.png");
+}
+
+/*using 'linear-gradient', you are able to add a tint to an image*/
+#project-4-bg {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("../img/projects/polaris-systems-preview.png");
+}
+
+
+
+
+/*---------------------------*/
+/*         FOOTER           */
+/*---------------------------*/
+
+.footer-hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head id="site-header">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+
+    <title>ESSY.ME</title>
+
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS Styles -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/styles/main.css' %}" />
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700,200' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+  </head>
+
+    <body id="body" background="{% static 'main/images/martin-sanchez-trees.jpg' %}">
+
+
+      <!-- conent wrapper for loading screen will be #page -->
+      <section id="page">
+
+        <!-- HEADER -->
+        <section>
+          <div class="header container">
+
+            <div class="row">
+
+              <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-md-6">
+
+                <div class="name-container">
+
+                  <div class="centering-div">
+                    <img id="scampbell" src="{% static 'main/images/long_logo.png' %}" alt="Scott Campbell" />
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="heading-container col-md-8 col-md-offset-2">
+                <div id="heading" class="">
+                  <h2><span class="color-accent-yellow">.:</span> musician <span class="color-accent-yellow">|</span> artist <span class="color-accent-yellow">|</span> full-stack developer <span class="color-accent-yellow">:.</span></h2>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- NAVIGATION -->
+
+        <section>
+          <div class="row hidden-sm hidden-md hidden-lg">
+
+            <!-- <div class="navbar navbar-default" role="navigation"> -->
+
+              <div class="navigation navbar col-xs-6 col-xs-offset-3">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">PROJECTS</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                </ul>
+              </div>
+
+
+
+          </div>
+        </section>
+
+
+
+
+        <!-- P5 SKETCH -->
+        <section>
+          <div class="sketch-container container">
+            <div class="row hidden-xs">
+
+              <div class="col-md-8 col-md-offset-2">
+                <div id="homeSketchContainer"></div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <!-- SOCIAL MEDIA ICONS -->
+
+        <section class="">
+
+          <div class="icons-row">
+            <div class="icons-container">
+
+              <div id="email" class="icon-container">
+                <span><a href="#"><img class="icon" src="{% static 'main/images/icons/email-white-transparent-xxl.png' %}" alt="" /></a></span>
+              </div>
+
+              <div id="youtube" class="icon-container">
+                <span><a href="https://www.youtube.com/channel/UCYqJ-EtqO6gVCPh4aDpckRA" target="_blank"><img class="icon" src="{% static 'main/images/icons/youtube-logo-light.png' %}" alt="" /></a></span>
+              </div>
+
+              <div id="github" class="icon-container">
+                <span><a href="https://github.com/scottc11" target="_blank"><img class="icon" src="{% static 'main/images/icons/gitHub-mark-light-120px-plus.png' %}" alt="" /></a></span>
+              </div>
+
+              <div id="twitter" class="icon-container">
+                <span><a href="https://twitter.com/Scott_Camp" target="_blank"><img class="icon" src="{% static 'main/images/icons/twitter_social_icon_white.png' %}" alt="" /></a></span>
+              </div>
+
+              <div id="soundcloud" class="icon-container">
+                <span><a href="https://soundcloud.com/scottcamp" target="_blank"><img class="icon" src="{% static 'main/images/icons/soundcloud-white-transparent-64.png' %}" alt="" /></a></span>
+              </div>
+
+              <div id="linkedIn" class="icon-container">
+                <span><a href="https://ca.linkedin.com/in/scottcampbell14" target="_blank"><img class="icon" src="{% static 'main/images/icons/in-white-75px-tm.png' %}" alt="" /></a></span>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+      <!-- BUTTONS -->
+      <!--*********-->
+
+      <section class="hidden-xs">
+
+        <div class="">
+          <a href="#projects">
+            <div class="button-transition left-button-slide projects-open-button">
+              <ul>
+                <li>P</li>
+                <li>R</li>
+                <li>O</li>
+                <li>J</li>
+                <li>E</li>
+                <li>C</li>
+                <li>T</li>
+                <li>S</li>
+                <li><span class="glyphicon glyphicon-plus"></span></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+
+        <a href="pages/about_page.html">
+          <div class="button-transition right-button-slide about-open-button">
+            <ul>
+              <li>A</li>
+              <li>B</li>
+              <li>O</li>
+              <li>U</li>
+              <li>T</li>
+              <li><span class="glyphicon glyphicon-certificate"></span></li>
+              <li>M</li>
+              <li>E</li>
+            </ul>
+          </div>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!--        PROJECTS          -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <section id="projects" class="projects-modal container">
+
+        <div class="row">
+
+          <div class="header-shell col-xs-6 col-xs-offset-3">
+            <h1 class="projects-header"><span class="color-accent-yellow"> [ </span>PROJECTS<span class="color-accent-yellow"> ] </span></h1>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!--        FOOTER            -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <footer class="container">
+
+        <div class="horizontal-center row">
+
+          <hr class="footer-hr col-xs-12">
+
+          <h5 class="margin-spacer color-accent-white">Site Designed and Created by</h5>
+
+          <div class="footer-logo">
+            <img src="{% static 'main/images/scampbell.png' %}" alt="" />
+          </div>
+
+        </div>
+
+      </footer>
+
+
+
+
+    </section id="page">
+    <!-- /CONTENT -->
+
+
+
+
+    <!-- SCRIPTS and FOOTER -->
+    <footer id="site-footer">
+
+      <!-- GOOGLE ANALYTICS -->
+      <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-81834164-1', 'auto');
+          ga('send', 'pageview');
+      </script>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+      <!-- P5.js Library -->
+      <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
+
+      <!-- Custom Scripts -->
+      <!-- <script language="javascript" type="text/javascript" src="{% static 'main/scripts/p5/sketch.js' %}"></script> -->
+      <script language="javascript" type="text/javascript" src="js/transitions.js"></script>
+      <script src="js/main.js"></script>
+
+
+    </footer>
+
+  </body>
+</html>
