@@ -9,11 +9,6 @@
       <!-- conent wrapper for loading screen will be #page -->
       <section id="page">
 
-        <!-- HEADER -->
-        
-
-
-
         <!-- P5 SKETCH -->
         <section>
           <div class="sketch-container container">
@@ -28,12 +23,9 @@
         </section>
 
 
-
-
-
         <!-- SOCIAL MEDIA ICONS -->
 
-        <section class="">
+        <section>
 
           <div class="icons-row">
             <div class="icons-container">
@@ -42,25 +34,11 @@
                 <span><a href="#"><img class="icon" src="{% static 'main/images/icons/email-white-transparent-xxl.png' %}" alt="" /></a></span>
               </div>
 
-              <div id="youtube" class="icon-container">
-                <span><a href="https://www.youtube.com/channel/UCYqJ-EtqO6gVCPh4aDpckRA" target="_blank"><img class="icon" src="{% static 'main/images/icons/youtube-logo-light.png' %}" alt="" /></a></span>
-              </div>
-
-              <div id="github" class="icon-container">
-                <span><a href="https://github.com/scottc11" target="_blank"><img class="icon" src="{% static 'main/images/icons/gitHub-mark-light-120px-plus.png' %}" alt="" /></a></span>
-              </div>
-
-              <div id="twitter" class="icon-container">
-                <span><a href="https://twitter.com/Scott_Camp" target="_blank"><img class="icon" src="{% static 'main/images/icons/twitter_social_icon_white.png' %}" alt="" /></a></span>
-              </div>
-
-              <div id="soundcloud" class="icon-container">
-                <span><a href="https://soundcloud.com/scottcamp" target="_blank"><img class="icon" src="{% static 'main/images/icons/soundcloud-white-transparent-64.png' %}" alt="" /></a></span>
-              </div>
-
-              <div id="linkedIn" class="icon-container">
-                <span><a href="https://ca.linkedin.com/in/scottcampbell14" target="_blank"><img class="icon" src="{% static 'main/images/icons/in-white-75px-tm.png' %}" alt="" /></a></span>
-              </div>
+              {% for icon in icons.all %}
+                <div id="{{icon.css_id}}" class="icon-container">
+                  <span><a href="{{icon.url}}" target="_blank"><img class="icon" src="{{ icon.icon_image.url }}" /></a></span>
+                </div>
+              {% endfor %}
 
             </div>
           </div>
